@@ -1,0 +1,230 @@
+@import "fonts.scss";
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.header {
+  height: 130px;
+  background-color: #2abf5e;
+}
+
+.header-content {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-panel {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 48px;
+  padding-bottom: 38px;
+
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+  z-index: 2;
+}
+
+.header-logotype {
+  width: 140px;
+}
+
+.menu-button {
+  width: 1.4em;
+  height: 1em;
+  border: none;
+  padding: 0;
+
+  background-color: transparent;
+  font-size: 25px;
+  position: relative;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+.menu-button:before,
+.menu-button:after {
+  content: "";
+  width: 100%;
+  height: 20%;
+
+  border-radius: 5px;
+  background-color: #ffffff;
+
+  position: absolute;
+  left: 0;
+}
+
+.menu-button:before {
+  top: 0;
+}
+
+.menu-button:after {
+  bottom: 0;
+}
+
+.menu-button-label {
+  width: 100%;
+  height: 20%;
+  margin-top: -0.1em;
+
+  border-radius: 5px;
+  background-color: #ffffff;
+
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+@media (min-width: 1200px) {
+  .menu-button,
+  .menu-button-label {
+    display: none;
+  }
+
+  .menu {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Helvetica Neue Cyr-Bold";
+  }
+
+  .menu-list {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+  }
+
+  .menu-list-item {
+    padding: 0 16px;
+  }
+
+  .menu-link {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    color: inherit;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .page-content {
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+
+  .hello {
+    background-image: url(../images/slide3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hello-content {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    display: flex;
+  }
+
+  .about {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .reviews {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .screenshot {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+
+  .demo {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .download {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .buy-app {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .form-row {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+}
